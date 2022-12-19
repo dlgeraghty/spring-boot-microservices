@@ -72,10 +72,13 @@ return ResponseEntity.created(null).build();
 - Different representations of data can be possible: XML, Json,... For xml it is needed to send a header application/xml
 - Multiple languages support
 - Dependency: jackson-dataformat-xml
-
+,
 ## Internationalization:
 - Use HTTP Request Header: Accept-Language to specify the language
 - Define a file _messages.properties_ for each language and use MessageSource + locale
 
 ## Versioning
 - URL: have different @GetMappings for each version with different URLs
+- Request parameter: Add the _params_ argument to the @GetMapping annotation
+- Header: Add the _headers_ argument to the @GetMapping annotation
+- Media type: Add the _produces_ argument to the @GetMapping annotation
