@@ -76,3 +76,6 @@ return ResponseEntity.created(null).build();
 ## Internationalization:
 - Use HTTP Request Header: Accept-Language to specify the language
 - Define a file _messages.properties_ for each language and use MessageSource + locale
+
+## Versioning
+- URL: have different @GetMappings for each version with different URLs
