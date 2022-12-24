@@ -96,3 +96,7 @@ return ResponseEntity.created(null).build();
 - Customize field names in a response: _@JsonProperty_
 - Static filtering: _@JsonIgnore_
 - Dynamic filtering: MappingJacksonValue & FilterProvider
+
+## Monitoring apis
+- Spring boot actuator
+- by default, only the health of the application is exposed
