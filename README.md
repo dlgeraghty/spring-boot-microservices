@@ -119,3 +119,9 @@ return ResponseEntity.created(null).build();
 - @Repository
 - command line runner -> implements CommandLineRunner
 - @Autowired
+
+## JPA
+- we would be mapping our Course bean directly to the table in the database via @Entity
+- @id, @column
+- EntityManager
+- @Transactional

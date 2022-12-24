@@ -6,8 +6,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class CommandLineRunner implements org.springframework.boot.CommandLineRunner{
 
+	//@Autowired
+	//private CourseJdbcRepository repository;
+	
 	@Autowired
-	private CourseJdbcRepository repository;
+	private CourseJpaRepository repository;
 	
 	@Override
 	public void run(String... args) throws Exception {
@@ -16,7 +19,7 @@ public class CommandLineRunner implements org.springframework.boot.CommandLineRu
 		repository.insert(new Course(2, "Learn Azure Now!", "david"));
 		repository.insert(new Course(3, "Learn DevOps Now!", "david"));
 		
-		repository.delete(1);
+		repository.deleteById(1);
 		
 		System.out.println(repository.findById(2));
 		System.out.println(repository.findById(3));
