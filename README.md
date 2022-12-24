@@ -82,3 +82,12 @@ return ResponseEntity.created(null).build();
 - Request parameter: Add the _params_ argument to the @GetMapping annotation
 - Header: Add the _headers_ argument to the @GetMapping annotation
 - Media type: Add the _produces_ argument to the @GetMapping annotation
+
+## Hypermedia as the engine of application state
+- give information to perform subsequent actions
+- custom format and implementation -> is very difficult to mantain
+- use some standard -> Json hypertext application language
+- _spring-boot-starter-hateoas_
+- we want to add a couple links
+- entityModel
+- WebMvcLinkBuilder
