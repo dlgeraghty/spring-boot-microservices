@@ -17,6 +17,9 @@ public class CommandLineRunner implements org.springframework.boot.CommandLineRu
 		repository.insert(new Course(3, "Learn DevOps Now!", "david"));
 		
 		repository.delete(1);
+		
+		System.out.println(repository.findById(2));
+		System.out.println(repository.findById(3));
 	}
 
 }
