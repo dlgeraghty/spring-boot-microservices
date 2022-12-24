@@ -100,3 +100,7 @@ return ResponseEntity.created(null).build();
 ## Monitoring apis
 - Spring boot actuator
 - by default, only the health of the application is exposed
+
+## HAL Explorer
+- view the apis in a graphical way
+- _spring-data-rest-hal-explorer_
