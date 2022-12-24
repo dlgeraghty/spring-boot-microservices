@@ -104,3 +104,7 @@ return ResponseEntity.created(null).build();
 ## HAL Explorer
 - view the apis in a graphical way
 - _spring-data-rest-hal-explorer_
+
+# 3. JPA and Hibernate
+- generate a new spring boot project from start.spring.io with the following dependencies: Spring Web, jdbc, jpa, H2
+-
