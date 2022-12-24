@@ -91,3 +91,8 @@ return ResponseEntity.created(null).build();
 - we want to add a couple links
 - entityModel
 - WebMvcLinkBuilder
+
+## Customize api responses
+- Customize field names in a response: _@JsonProperty_
+- Static filtering: _@JsonIgnore_
+- Dynamic filtering: MappingJacksonValue & FilterProvider
