@@ -125,3 +125,7 @@ return ResponseEntity.created(null).build();
 - @id, @column
 - EntityManager
 - @Transactional
+
+## Spring Data JPA
+- makes JPA even more simple
+- `public interface CourseSpringDataJPARepository extends JpaRepository<CourseSpringDataJPARepository, Long>{ `
