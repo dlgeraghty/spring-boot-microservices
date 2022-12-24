@@ -28,6 +28,8 @@ public class CommandLineRunner implements org.springframework.boot.CommandLineRu
 		
 		System.out.println(repository.findById(2l));
 		System.out.println(repository.findById(3l));
+		
+		System.out.println(repository.findByAuthor("david"));
 	}
 
 }
