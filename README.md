@@ -107,4 +107,15 @@ return ResponseEntity.created(null).build();
 
 # 3. JPA and Hibernate
 - generate a new spring boot project from start.spring.io with the following dependencies: Spring Web, jdbc, jpa, H2
--
+
+## H2 database
+- we want to connect to the H2 database
+- enable the console in the properties file and set a static url
+- we then create a schema.sql in a file
+- spring jdbc requires a lot less java code when compared to plain jdbc connectors
+
+## Jdbc
+- JdbcTemplate
+- @Repository
+- command line runner -> implements CommandLineRunner
+- @Autowired
