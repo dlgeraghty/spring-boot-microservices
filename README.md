@@ -52,7 +52,7 @@ return ResponseEntity.created(null).build();
 
 ## Custom exception structure
 1. Create a custom class to manage the exception, with the structure needed.
-2. We want to overwrite the _ResponseEntity<Object>_ defined by default by Spring, for this we have to write a class that extends it.
+2. We want to overwrite the ResponseEntity<Object> defined by default by Spring, for this we have to write a class that extends it.
 3. Use the @ExceptionHandler decorator
 4. Use the @ControllerAdvice decorator
 
