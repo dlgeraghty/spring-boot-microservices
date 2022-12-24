@@ -12,7 +12,11 @@ public class CommandLineRunner implements org.springframework.boot.CommandLineRu
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		repository.insert();
+		repository.insert(new Course(1, "Learn AWS Now!", "david"));
+		repository.insert(new Course(2, "Learn Azure Now!", "david"));
+		repository.insert(new Course(3, "Learn DevOps Now!", "david"));
+		
+		repository.delete(1);
 	}
 
 }
