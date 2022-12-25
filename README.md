@@ -129,3 +129,22 @@ return ResponseEntity.created(null).build();
 ## Spring Data JPA
 - makes JPA even more simple
 - `public interface CourseSpringDataJPARepository extends JpaRepository<CourseSpringDataJPARepository, Long>{ `
+
+# 4. Microservices
+## Introduction
+- REST api
+- Small well chosen deployable units
+- Cloud enabled -> Taking down instances of the individual units should not have huge impact on the application
+
+## Challenges
+- Context: how to decide what to do in each microservice -> boundaries of each microservice
+- Configuration: Dynamic scale up and scale down
+- Visibility: If there is a bug, how do you identify what happened? Monitoring, logs
+- Fault tolerance: things can break easily
+
+## Spring cloud
+- Provides solutions for the common problems
+- Configuration management -> solved by the spring cloud config server project
+- Dynamic Scale up and down -> Ribbon Load Balancing Eureka
+- Visibility and monitoring -> Zipkin Distributed Tracing & Netflix API Gateway
+- Fault tolerance -> Hystrix
