@@ -2,10 +2,20 @@ package com.learningspring.microservices.currencyexchangeservice;
 
 import java.math.BigDecimal;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class CurrencyExchange {
 
+	@Id
 	private Long id;
+	
+	@Column(name="currency-from")
 	private String from;
+	
+	@Column(name="currency-to")
 	private String to;
 	private BigDecimal conversionMultiple;
 	private String environment;
@@ -23,7 +33,7 @@ public class CurrencyExchange {
 	}
 
 	public Long getId() {
-		return id;
+		return id; 
 	}
 
 	public void setId(Long id) {
